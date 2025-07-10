@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wi-Fi Sítio Sabarense</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #007aff;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      text-decoration: none;
+      margin-bottom: 1em;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background-color: #005bb5;
+    }
+    #senha {
+      display: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    button.reveal {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button.reveal:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Obrigado por visitar o Sítio Sabarense!</h1>
+  <p>Para acessar o Wi-Fi, siga nossa página no Instagram:</p>
+  <a class="button" href="https://www.instagram.com/sitiosabarenselagoasanta" target="_blank">
+    Seguir @sitiosabarenselagoasanta
+  </a>
+  <p>Depois de seguir, clique abaixo para ver a senha:</p>
+  <button class="reveal" onclick="document.getElementById('senha').style.display='block'">
+    Já segui
+  </button>
+  <div id="senha">
+    Senha do Wi-Fi: <br><strong>@Sitiosabarense_visitantes</strong>
+  </div>
+</body>
+</html>
